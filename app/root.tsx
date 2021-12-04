@@ -1,6 +1,7 @@
 import {
   Link,
   Links,
+  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
@@ -8,6 +9,11 @@ import {
   ScrollRestoration,
   useCatch,
 } from "remix";
+import tailwindUrl from "./styles/tailwind.css";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: tailwindUrl },
+];
 
 export default function App() {
   return (
@@ -101,7 +107,7 @@ function Document({
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="container mx-auto">
       <header>
         <Link to="/" title="Remix">
           <RemixLogo />

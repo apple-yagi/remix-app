@@ -8,6 +8,8 @@
     "dev": "remix dev",
     "postinstall": "remix setup node",
     "start": "remix-serve build",
+    "tw": "tailwindcss --output ./app/styles/tailwind.css --config ./config/tailwind.js --watch",
+    "tw:prod": "tailwindcss --output ./app/styles/tailwind.css --config ./config/tailwind.js --minify",
     "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts app",
     "format": "prettier --write app",
     "prepare": "git config --local core.hooksPath .githooks"
@@ -31,6 +33,7 @@
     "eslint-plugin-react": "^7.27.1",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
+    "tailwindcss": "^2.2.19",
     "typescript": "^4.1.2"
   },
   "engines": {

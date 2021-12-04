@@ -10,6 +10,8 @@ import {
   useCatch,
 } from "remix";
 import tailwindUrl from "./styles/tailwind.css";
+import { config } from "dotenv";
+config();
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwindUrl },

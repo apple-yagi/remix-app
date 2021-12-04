@@ -7,19 +7,26 @@
     "build": "remix build",
     "dev": "remix dev",
     "postinstall": "remix setup node",
-    "start": "remix-serve build"
+    "start": "remix-serve build",
+    "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts app"
   },
   "dependencies": {
     "@remix-run/react": "^1.0.6",
+    "@remix-run/serve": "^1.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "remix": "^1.0.6",
-    "@remix-run/serve": "^1.0.6"
+    "remix": "^1.0.6"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.0.6",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.4.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-xo": "^0.39.0",
+    "eslint-plugin-react": "^7.27.1",
     "typescript": "^4.1.2"
   },
   "engines": {
